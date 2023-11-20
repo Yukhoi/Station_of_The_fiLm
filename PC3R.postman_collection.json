@@ -1,0 +1,530 @@
+{
+	"info": {
+		"_postman_id": "dbfd0dec-fff8-457c-96d0-ba7bddc3ede6",
+		"name": "PC3R",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "set tt0109830 favorite of u1",
+			"protocolProfileBehavior": {
+				"followOriginalHttpMethod": true
+			},
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"film_id\":\"tt0109830\",\r\n    \"user_id\":\"u1\",\r\n    \"favorite\":true,\r\n    \"auth\":{\r\n        \"userid\":\"u1\",\r\n        \"session\":\"Lb6yp0ZTFepmASwTlug7eBa6yKkAQXYB\"\r\n    }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": ":54321/favorite",
+					"port": "54321",
+					"path": [
+						"favorite"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "remove tt0109830 favorite of u1",
+			"protocolProfileBehavior": {
+				"followOriginalHttpMethod": true
+			},
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"film_id\":\"tt0109830\",\r\n    \"user_id\":\"u1\",\r\n    \"favorite\":false,\r\n    \"auth\":{\r\n        \"userid\":\"u1\",\r\n        \"session\":\"M85l7eLjNxyZvdQeVOOsSzKLXh45Ljga\"\r\n    }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": ":54321/favorite",
+					"port": "54321",
+					"path": [
+						"favorite"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get Film les évadés",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:54321/film/tt0111161",
+					"host": [
+						"localhost"
+					],
+					"port": "54321",
+					"path": [
+						"film",
+						"tt0111161"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get Film no film",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": ""
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get Comments User u1",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:54321/comment/user/u1",
+					"host": [
+						"localhost"
+					],
+					"port": "54321",
+					"path": [
+						"comment",
+						"user",
+						"u1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "put Comment \"delete this\" with u0 on tt0111161 (les Evadés)",
+			"protocolProfileBehavior": {
+				"followOriginalHttpMethod": true
+			},
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"film_id\":\"tt0111161\",\r\n    \"user_id\":\"u1\",\r\n    \"contenu\":\"delete this\",\r\n    \"auth\" : {\r\n        \"userid\":\"u1\",\r\n        \"session\":\"vOXu5lP0x7P5atylcgoYsKJ26mwE1Ucx\"\r\n    }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:54321/comment",
+					"host": [
+						"localhost"
+					],
+					"port": "54321",
+					"path": [
+						"comment"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "put Comment \"great movie\" with u1 on tt0111161 (les Evadés) Copy",
+			"protocolProfileBehavior": {
+				"followOriginalHttpMethod": true
+			},
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"film_id\":\"tt0111161\",\r\n    \"user_id\":\"u1\",\r\n    \"contenu\":\"great movie (now with auth 2)\",\r\n    \"auth\":{\r\n        \"userid\":\"u1\",\r\n        \"session\":\"ACeYCMR4RsCb25IsZbwe7Mtw1EDt3THQ\"\r\n    }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:54321/comment",
+					"host": [
+						"localhost"
+					],
+					"port": "54321",
+					"path": [
+						"comment"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "put Comment \"run Forest !\" with u1 on  (Forest Gump) Copy",
+			"protocolProfileBehavior": {
+				"followOriginalHttpMethod": true
+			},
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"film_id\":\"tt0109830\",\r\n    \"user_id\":\"u1\",\r\n    \"contenu\":\"run Forest ! (with auth)\",\r\n    \"auth\":{\r\n        \"userid\":\"u1\",\r\n        \"session\":\"ACeYCMR4RsCb25IsZbwe7Mtw1EDt3THQ\"\r\n    }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:54321/comment",
+					"host": [
+						"localhost"
+					],
+					"port": "54321",
+					"path": [
+						"comment"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get Film forrest gump",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": ":54321/film/tt0109830",
+					"port": "54321",
+					"path": [
+						"film",
+						"tt0109830"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get Comments forrest gump",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:54321/comment/film/tt0109830",
+					"host": [
+						"localhost"
+					],
+					"port": "54321",
+					"path": [
+						"comment",
+						"film",
+						"tt0109830"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get Comments of no film",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:54321/comment/film/0",
+					"host": [
+						"localhost"
+					],
+					"port": "54321",
+					"path": [
+						"comment",
+						"film",
+						"0"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get Comments les évadés",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:54321/comment/film/tt0111161",
+					"host": [
+						"localhost"
+					],
+					"port": "54321",
+					"path": [
+						"comment",
+						"film",
+						"tt0111161"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get Favoris films u1",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": ":54321/favorites/user/u1",
+					"port": "54321",
+					"path": [
+						"favorites",
+						"user",
+						"u1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "isFavorite tt0109830 of u1",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": ":54321/favorite/film/tt0109830/u1",
+					"port": "54321",
+					"path": [
+						"favorite",
+						"film",
+						"tt0109830",
+						"u1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "nouvel utilisateur",
+			"protocolProfileBehavior": {
+				"followOriginalHttpMethod": true
+			},
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\" : \"ambidault@example.com\",\r\n    \"username\" : \"am_bidault\",\r\n    \"password\" : \"pass12\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": ":54321/user",
+					"port": "54321",
+					"path": [
+						"user"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "login",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"\r",
+							"var jsonData = JSON.parse(pm.response.text());\r",
+							"pm.globals.set(\"session_u1\", jsonData.session);\r",
+							"\r",
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"protocolProfileBehavior": {
+				"followOriginalHttpMethod": true
+			},
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\" : \"ambidault@example.com\",\r\n    \"password\" : \"pass12\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": ":54321/login",
+					"port": "54321",
+					"path": [
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "logout",
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"exec": [
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"protocolProfileBehavior": {
+				"followOriginalHttpMethod": true
+			},
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \r\n    \"auth\":{\r\n        \"userid\":\"u1\",\r\n        \"session\":\"M85l7eLjNxyZvdQeVOOsSzKLXh45Ljga\"\r\n    }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": ":54321/logout",
+					"port": "54321",
+					"path": [
+						"logout"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete comment",
+			"protocolProfileBehavior": {
+				"followOriginalHttpMethod": true
+			},
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"auth\":{\r\n        \"userid\":\"u1\",\r\n        \"session\":\"k5TicBEW2CxFtcIZfDUJMZZOdJARazeW\"\r\n    }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:54321/comment/c7",
+					"host": [
+						"localhost"
+					],
+					"port": "54321",
+					"path": [
+						"comment",
+						"c7"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete user",
+			"protocolProfileBehavior": {
+				"followOriginalHttpMethod": true
+			},
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "localhost:54321/user/u2",
+					"host": [
+						"localhost"
+					],
+					"port": "54321",
+					"path": [
+						"user",
+						"u2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get User u2",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": ":54321/user/u1",
+					"port": "54321",
+					"path": [
+						"user",
+						"u1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "recommend of u1",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:54321/recommend/user/u1",
+					"host": [
+						"localhost"
+					],
+					"port": "54321",
+					"path": [
+						"recommend",
+						"user",
+						"u1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "recommend of tt0109830",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:54321/recommend/film/tt0109830",
+					"host": [
+						"localhost"
+					],
+					"port": "54321",
+					"path": [
+						"recommend",
+						"film",
+						"tt0109830"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
