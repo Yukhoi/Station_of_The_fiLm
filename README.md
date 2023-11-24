@@ -171,7 +171,3 @@ Ou par genre.
 ![SearchG](asset/search-genre.png "Search by genre")
 
 Il est à noter que la recherche par genre prend plus de temps que la recherche par titre.
-
-Enfin, en cliquant sur l'icone de déconnection, l'utilisateur est déconnecté et revient à la page de connection.#   S t a t i o n _ o f _ T h e _ f i L m 
- 
- 
